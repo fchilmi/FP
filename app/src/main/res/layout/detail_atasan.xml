@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/AtasanPhoto"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nama_atasan"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="10dp"
+                    android:text="Produk 1"
+                    android:textSize="24sp"
+                    android:textAppearance="@style/TextAppearance.FP.Text"/>
+                <TextView
+                    android:id="@+id/hargaAtasan"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Rp. 100.000,-"
+                    android:textSize="18sp"
+                    android:textAppearance="@style/TextAppearance.FP.Text"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/deskripsi_atasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_hitam"
+                android:text="Deskripsi"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.FP.Text"/>
+            <TextView
+                android:id="@+id/link_atasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorAccent"
+                android:text="Link"
+                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.FP.Text"/>
+            <Button
+                android:id="@+id/btnChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#9CD6E4"
+                android:text="Chat"
+                android:textSize="26sp"
+                android:textAppearance="@style/TextAppearance.FP.Info"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

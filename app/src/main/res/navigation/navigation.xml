@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home_fragment">
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.example.fp.home_fragment"
+        android:label="Dashboard"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_home_to_atasan"
+            app:destination="@+id/frag_atasan"/>
+        <action
+            android:id="@+id/action_home_to_celana"
+            app:destination="@+id/frag_celana"/>
+        <action
+            android:id="@+id/action_home_to_hoodie"
+            app:destination="@+id/frag_hoodie"/>
+        <action
+            android:id="@+id/action_home_to_rok"
+            app:destination="@+id/frag_rok"/>
+    </fragment>
+    <fragment
+        android:id="@+id/frag_profil"
+        android:name="com.example.fp.profil.Frag_profil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/frag_atasan"
+        android:name="com.example.fp.atasan.Frag_atasan"
+        android:label="fragment_produk"
+        tools:layout="@layout/fragment_atasan">
+        <action
+            android:id="@+id/action_atasan_to_detail_atasan"
+            app:destination="@+id/frag_detail_atasan"/>
+    </fragment>
+    <fragment
+        android:id="@+id/frag_celana"
+        android:name="com.example.fp.celana.Frag_celana"
+        android:label="fragment_celana"
+        tools:layout="@layout/fragment_celana" />
+    <fragment
+        android:id="@+id/frag_hoodie"
+        android:name="com.example.fp.hoodie.Frag_hoodie"
+        android:label="fragment_hoodie"
+        tools:layout="@layout/fragment_hoodie" />
+    <fragment
+        android:id="@+id/frag_rok"
+        android:name="com.example.fp.rok.Frag_rok"
+        android:label="fragment_rok"
+        tools:layout="@layout/fragment_rok" />
+
+    <fragment
+        android:id="@+id/frag_detail_atasan"
+        android:label="Detail Atasan"
+        tools:layout="@layout/detail_atasan"/>
+    <fragment
+        android:id="@+id/frag_detail_celana"
+        android:label="Detail Atasan"
+        tools:layout="@layout/detail_celana"/>
+    <fragment
+        android:id="@+id/frag_detail_hoodie"
+        android:label="Detail Atasan"
+        tools:layout="@layout/detail_hoodie"/>
+    <fragment
+        android:id="@+id/frag_detail_rok"
+        android:label="Detail Atasan"
+        tools:layout="@layout/detail_rok"/>
+
+</navigation>

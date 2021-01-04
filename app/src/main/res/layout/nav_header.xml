@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@drawable/biru"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:text="ButikKu"
+        android:textAppearance="@style/TextAppearance.FP.Title"
+        android:textColorHint="#1D1B1B"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+</LinearLayout>
